@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Client">
+   <children>
+      <TableView fx:id="table2" layoutX="29.0" layoutY="21.0" prefHeight="327.0" prefWidth="542.0" />
+      <Button layoutX="29.0" layoutY="360.0" mnemonicParsing="false" onAction="#workersViewInfo" text="Добавить" />
+   </children>
+</AnchorPane>

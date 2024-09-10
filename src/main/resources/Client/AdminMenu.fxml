@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Client">
+   <children>
+      <Button layoutX="374.0" layoutY="203.0" mnemonicParsing="false" onAction="#adminViewPersonalInfoDialog" prefHeight="25.0" prefWidth="198.0" text="Просмотр личной информации" />
+      <Button layoutX="374.0" layoutY="240.0" mnemonicParsing="false" onAction="#adminUpdatePersonalInfoDialog" text="Изменение личной информации" />
+      <Label layoutX="70.0" layoutY="51.0" text="Выбирайте">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" layoutY="350.0" mnemonicParsing="false" onAction="#CloseWindow" prefHeight="25.0" prefWidth="84.0" text="Выход" />
+      <MenuButton layoutX="70.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Действия с пользователями">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#usersViewDialog" text="Просмотреть список пользователей" />
+            <MenuItem mnemonicParsing="false" onAction="#intoFileUsers" text="Составить файл" />
+            <MenuItem mnemonicParsing="false" onAction="#analyticsUsersDialog" text="Аналитика ролей" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="70.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Действия с сотрудниками">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#addWorkerDialog" text="Добавить сотрудника" />
+            <MenuItem mnemonicParsing="false" onAction="#addAdminDialog" text="Добавить администратора" />
+            <MenuItem mnemonicParsing="false" onAction="#adminsViewDialog" text="Просмотреть список сотрудников" />
+            <MenuItem mnemonicParsing="false" onAction="#deleteWorkerDialog" text="Удалить сотрудника или администратора" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="70.0" layoutY="209.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Действия с клиентами">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#clientsViewDialog" text="Просмотреть список клиентов" />
+            <MenuItem mnemonicParsing="false" onAction="#deleteClientDialog" text="Удалить клиента" />
+            <MenuItem mnemonicParsing="false" onAction="#intoFileClients" text="Составить файл" />
+            <MenuItem mnemonicParsing="false" onAction="#updateClientDiscountDialog" text="Добавить скидку" />
+            <MenuItem mnemonicParsing="false" onAction="#analyticsDiscountDialog" text="Аналитика скидок" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="70.0" layoutY="252.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="Действия с услугами">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#servicesViewDialog" text="Просмотреть услуги" />
+            <MenuItem mnemonicParsing="false" onAction="#deleteServiceDialog" text="Удалить услугу" />
+            <MenuItem mnemonicParsing="false" onAction="#servicesSearchDialog" text="Поиск по наименованию" />
+            <MenuItem mnemonicParsing="false" onAction="#analyticsServiceDialog" text="Аналитика стоимости" />
+            <MenuItem mnemonicParsing="false" onAction="#analyticsCostDialog" text="Аналитика ценового сегмента" />
+         </items>
+      </MenuButton>
+      <Button layoutX="70.0" layoutY="288.0" mnemonicParsing="false" onAction="#registersViewDialog" prefHeight="25.0" prefWidth="198.0" text="Просмотреть список записей" />
+   </children>
+</AnchorPane>

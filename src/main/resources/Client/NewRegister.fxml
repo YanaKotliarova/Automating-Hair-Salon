@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Client">
+   <children>
+      <TableView fx:id="table2" layoutX="31.0" layoutY="32.0" prefHeight="243.0" prefWidth="542.0" />
+      <Button layoutX="31.0" layoutY="282.0" mnemonicParsing="false" onAction="#addRegisterView" text="Добавить" />
+      <TextField fx:id="ServiceCode" layoutX="154.0" layoutY="282.0" prefHeight="25.0" prefWidth="115.0" promptText="Код услуги" />
+      <TextField fx:id="Date" layoutX="289.0" layoutY="282.0" prefHeight="25.0" prefWidth="115.0" promptText="Дата" />
+      <TextField fx:id="Time" layoutX="426.0" layoutY="282.0" prefHeight="25.0" prefWidth="115.0" promptText="Время" />
+      <Button layoutX="463.0" layoutY="316.0" mnemonicParsing="false" onAction="#addRegister" text="Записаться" />
+   </children>
+</AnchorPane>

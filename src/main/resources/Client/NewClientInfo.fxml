@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Client">
+   <children>
+      <Label layoutX="80.0" layoutY="25.0" text="Изменение личной ">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="95.0" text="информации">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FIO" layoutX="173.0" layoutY="258.0" promptText="ФИО" />
+      <TextField fx:id="Phone" layoutX="371.0" layoutY="258.0" promptText="Телефон" />
+      <Label layoutX="79.0" layoutY="262.0" text="Изменить:" />
+      <Button layoutX="432.0" layoutY="299.0" mnemonicParsing="false" onAction="#clientUpdatePersonalInfo" text="Подтвердить" />
+      <TextField fx:id="NPassword" layoutX="173.0" layoutY="299.0" promptText="Пароль" />
+   </children>
+</AnchorPane>
